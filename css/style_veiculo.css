@@ -105,3 +105,10 @@ h2{
 .card strong{
     color:#3cff8f;
 }
+.botao-limpar{
+    background:#ff3b3b;
+}
+
+.botao-limpar:hover{
+    box-shadow:0 0 15px #ff3b3b;
+}

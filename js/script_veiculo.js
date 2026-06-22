@@ -92,3 +92,17 @@ form.addEventListener("submit", function(event){
 
     form.reset();
 });
+
+window.limparVeiculos = function(){
+
+    let confirmar =
+    confirm("Deseja realmente remover todos os veículos?");
+
+    if(confirmar){
+
+        let lista =
+        document.getElementById("listaVeiculos");
+
+        lista.innerHTML = "";
+    }
+}
