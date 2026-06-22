@@ -51,7 +51,7 @@ form.addEventListener("submit", function(event){
 
     let valorFinal;
 
-    if(ipva === "Isento"){
+    if(ipva === "ISENTO"){
         
         valorFinal =
         seguro + licenciamento;

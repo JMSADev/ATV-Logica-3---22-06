@@ -1,7 +1,7 @@
 export function calcularIPVA(valor, combustivel, idade){
 
     if(idade > 20){
-        return "isento";
+        return "ISENTO";
     }
 
     if (combustivel === "gasolina"){
@@ -22,5 +22,7 @@ export function calcularIPVA(valor, combustivel, idade){
 
     if (combustivel === "eletrico"){
         return valor * 0.02
+
+    return 0;    
     }
 }
