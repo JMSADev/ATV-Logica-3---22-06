@@ -68,7 +68,12 @@ form.addEventListener("submit", function(event){
         "listaVeiculos"
     );
 
-    lista.innerHTML += `
+    let card =
+    document.createElement("div");
+
+    card.classList.add("card");
+
+    card.innerHTML = `
     <div class="card">
     <p><strong>Modelo:</strong> ${modelo}</p>
     <p><strong>Marca:</strong> ${marca}</p>
