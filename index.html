@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo seguro e IPVA automotivo</title>
+
+    <link rel="stylesheet" href="css/style_veiculo.css">
+    <script type="module" src="js/script_veiculo.js"></script>
+
+</head>
+<body>
+
+    <h1>Cálculo Seguro e IPVA Automotivo</h1>
+
+    <form id="formVeiculo">
+
+        <label>Modelo:</label>
+        <input type="text" id="modelo" required>
+
+        <br><br>
+
+        <label>Marca:</label>
+        <input type="text" id="marca" required>
+
+        <br><br>
+
+        <label>Placa:</label>
+        <input type="text" id="placa" required>
+
+        <br><br>
+
+        <label>Ano:</label>
+        <input type="number" id="ano" required>
+
+        <br><br>
+
+        <label>Valor:</label>
+        <input type="number" id="valor" required>
+
+        <h3>Combustível</h3>
+
+        <input type="radio" name="combustivel" value="gasolina" required>
+        <label>Gasolina</label>
+
+        <br>
+
+        <input type="radio" name="combustivel" value="etanol" required>
+        <label>Etanol</label>
+
+        <br>
+
+        <input type="radio" name="combustivel" value="bicombustivel" required>
+        <label>Bicombustível</label>
+
+        <br>
+
+        <input type="radio" name="combustivel" value="hibrido" required>
+        <label>Híbrido</label>
+
+        <br>
+
+        <input type="radio" name="combustivel" value="eletrico" required>
+        <label>Elétrico</label>
+
+        <br>
+
+        <button type="submit">
+            Adicionar
+        </button>
+    </form>
+
+    <hr>
+    
+    <h2>Veículos Cadastrados</h2>
+
+    <div id="listaVeiculos"></div>
+    
+</body>
+</html>
