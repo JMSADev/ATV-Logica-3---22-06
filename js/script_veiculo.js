@@ -53,14 +53,12 @@ form.addEventListener("submit", function(event){
 
     if(ipva === "ISENTO"){
         
-        valorFinal =
-        seguro + licenciamento;
-
+        valorFinal = seguro + 150
+    
     }
     else{
 
-        valorFinal =
-        seguro + ipva + licenciamento;
+        valorFinal = seguro + ipva + 150;
     }
 
     let lista =
@@ -83,7 +81,6 @@ form.addEventListener("submit", function(event){
         : ipva}
     </p>
 
-    <p><strong>licenciamento:</strong> R$ ${licenciamento.toFixed(2)}</p>
 
     <p><strong>Valor Final:</strong> R$ ${valorFinal.toFixed(2)}</p>
 
